@@ -1,0 +1,11 @@
+1. date
+(crontab -l 2>/dev/null; echo "0 23 * * * /usr/bin/dnf update -y") | crontab -
+
+2. (crontab -l 2>/dev/null; echo "0 3 * * 0 /usr/sbin/reboot") | crontab -
+
+crontab -l
+
+3. ls -l /tmp
+echo "rm -rf /tmp/*" | at now + 1 minute
+ls -l /tmp
+date

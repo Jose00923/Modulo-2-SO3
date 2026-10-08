@@ -1,0 +1,20 @@
+1.
+date
+echo -e "n\np\n1\n\n\nw" | fdisk /dev/nvme0n2
+mkfs.ext4 /dev/nvme0n2p1
+mkdir -p /home/jjerez/Desktop/disco_montaje
+mount /dev/nvme0n2p1 /home/jjerez/Desktop/disco_montaje
+
+3. 
+cd /home/jjerez/Desktop/disco_montaje
+touch AdrianAlcantara.txt
+
+4. 
+cd ~
+umount /home/jjerez/Desktop/disco_montaje
+mount /dev/nvme0n2p1 /mnt
+
+5. 
+cd /mnt
+ls -l AdrianAlcantara.txt
+date

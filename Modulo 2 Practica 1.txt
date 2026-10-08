@@ -1,0 +1,34 @@
+1.
+dnf update && upgrade
+
+clear
+
+2.
+
+git clone https://github.com/aristocratos/bashtop.git
+
+3.
+
+cd bashtop
+
+make install
+
+./bashtop
+
+make uninstall
+
+./bashtop
+
+4.
+
+tree
+
+clear
+
+rm -rf /Desktop/bashtop
+
+cd Desktop
+
+tree
+
+clear
